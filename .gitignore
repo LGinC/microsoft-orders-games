@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Personal order data and generated reports
+raw/*
+!raw/.gitkeep
+derived/*
+!derived/.gitkeep
+result.html

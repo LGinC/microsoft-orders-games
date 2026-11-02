@@ -1,0 +1,35 @@
+{
+  "include_item_types": ["Game", "Durable"],
+  "exclude_item_types": ["StoredValue", "CSV", "Movie", "Subscription", "Software", "Unknown"],
+  "refund": {
+    "item_states": [
+      "Refunded",
+      "GiftRefunded",
+      "Returned",
+      "DeliveryFailedRefunded",
+      "DeliveryFailedProcessingRefund"
+    ],
+    "local_status_contains": ["已退款", "礼品已退回"],
+    "use_is_returned": true
+  },
+  "redemption_gift": {
+    "payment_contains": ["代码已兑换"],
+    "item_types": ["Durable", "Consumable", "Software", "Unknown", "Game"],
+    "require_zero_amount": true,
+    "item_states": ["Redeemed"]
+  },
+  "promotional_zero": {
+    "enabled": true,
+    "require_zero_amount": true,
+    "empty_payment": true,
+    "item_types": ["Durable", "Consumable", "Game", "Software", "Movie", "Unknown"]
+  },
+  "consumable_always_exclude": true,
+  "notes": {
+    "Game": "商店目录 ProductType=Game，作为游戏本体",
+    "Durable": "商店目录 ProductType=Durable，作为 DLC；捆绑包会拆成子 SKU",
+    "Consumable": "局内道具/充能包，默认排除",
+    "StoredValue_CSV": "账户余额充值，不是游戏",
+    "Redeemed+代码已兑换+0元": "兑换码赠送的游戏或道具"
+  }
+}
