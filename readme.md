@@ -28,7 +28,7 @@
 ## 环境
 
 - Windows，已安装 Python 3
-- 已安装 [BrowserSkill](https://github.com/Tencent/BrowserSkill) CLI（`bsk`，默认 `C:\Users\we\.local\bin\bsk.exe`）
+- 已安装 [BrowserSkill](https://github.com/Tencent/BrowserSkill) CLI（`bsk`，默认 `~\.local\bin\bsk.exe`）
 - 浏览器已装 BrowserSkill 扩展，并开启本地连接
 - 浏览器已登录 [微软账户订单页](https://account.microsoft.com/billing/orders)
 
